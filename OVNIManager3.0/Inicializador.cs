@@ -17,11 +17,6 @@ namespace OVNIManager3._0
             InitializeComponent();
         }
 
-        private void cmbPlaneta_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
         private void Inicializador_Load(object sender, EventArgs e)
         {
             cmbPlaneta.DataSource = BibliotecaOVNI.OVNI.PlanetasValidos;

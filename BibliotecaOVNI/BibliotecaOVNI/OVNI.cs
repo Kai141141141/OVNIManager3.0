@@ -41,8 +41,10 @@ namespace BibliotecaOVNI
         public int QtdAbduzidos { get { return _qtdAbduzidos;} }
         public int QtdTripulantes { get { return _qtdTripulantes;} }
 
-        
-
+        public string PlanetaAtual
+        {
+            get { return _planetaAtual; }
+        }
         public OVNI(int maxTripulantes, int maxAbduzidos, string planetaOrigem) 
         {
             // O construtor irá apenas definir a capacidade máxima do veículo:
@@ -87,7 +89,7 @@ namespace BibliotecaOVNI
         public bool AdicionarTripulante()
         {
             // Retornar true apenas se o novo tripulante não execeder _maxTripulantes:
-            if((_qtdTripulantes+1) > _maxTripulantes)
+            if((_qtdTripulantes+1) > _maxTripulantes || !Situacao)
             {
                 return false;
             }

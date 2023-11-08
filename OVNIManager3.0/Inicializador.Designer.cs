@@ -1,4 +1,6 @@
-﻿namespace OVNIManager3._0
+﻿using System;
+
+namespace OVNIManager3._0
 {
     partial class Inicializador
     {
@@ -114,7 +116,7 @@
             this.cmbPlaneta.Name = "cmbPlaneta";
             this.cmbPlaneta.Size = new System.Drawing.Size(103, 21);
             this.cmbPlaneta.TabIndex = 7;
-            this.cmbPlaneta.SelectedIndexChanged += new System.EventHandler(this.cmbPlaneta_SelectedIndexChanged);
+            //this.cmbPlaneta.SelectedIndexChanged += new System.EventHandler(this.cmbPlaneta_SelectedIndexChanged);
             // 
             // btnIniciar
             // 
@@ -169,6 +171,10 @@
             this.PerformLayout();
 
         }
+
+        
+
+
 
         #endregion
 
